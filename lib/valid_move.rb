@@ -1,11 +1,9 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  space = board[index]
-  
 # must move to a position within the board '1 - 9'
 # position must be vacant
 
-  if space.between?(0, 8) == TRUE && position_taken?(board, index) == FALSE
+  if index.between?(0, 8) == TRUE && position_taken?(board, index) == FALSE
     return TRUE
   else
     return FALSE
